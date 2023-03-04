@@ -14,6 +14,8 @@
 		28F1B8E329B332CD001FC6A5 /* MucisByLocationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B8E229B332CD001FC6A5 /* MucisByLocationAppTests.swift */; };
 		28F1B8ED29B332CD001FC6A5 /* MucisByLocationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B8EC29B332CD001FC6A5 /* MucisByLocationAppUITests.swift */; };
 		28F1B8EF29B332CD001FC6A5 /* MucisByLocationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B8EE29B332CD001FC6A5 /* MucisByLocationAppUITestsLaunchTests.swift */; };
+		28F1B8FD29B3331A001FC6A5 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B8FC29B3331A001FC6A5 /* LocationHandler.swift */; };
+		28F1B8FF29B3333F001FC6A5 /* CLPlacemarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B8FE29B3333F001FC6A5 /* CLPlacemarks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		28F1B8E829B332CD001FC6A5 /* MucisByLocationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MucisByLocationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F1B8EC29B332CD001FC6A5 /* MucisByLocationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MucisByLocationAppUITests.swift; sourceTree = "<group>"; };
 		28F1B8EE29B332CD001FC6A5 /* MucisByLocationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MucisByLocationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28F1B8FC29B3331A001FC6A5 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		28F1B8FE29B3333F001FC6A5 /* CLPlacemarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlacemarks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		28F1B8D029B332C9001FC6A5 /* MucisByLocationApp */ = {
 			isa = PBXGroup;
 			children = (
+				28F1B8FB29B332EF001FC6A5 /* Extensions */,
 				28F1B8D129B332C9001FC6A5 /* MucisByLocationAppApp.swift */,
 				28F1B8D329B332C9001FC6A5 /* ContentView.swift */,
 				28F1B8D529B332CD001FC6A5 /* Assets.xcassets */,
@@ -106,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				28F1B8D829B332CD001FC6A5 /* Preview Assets.xcassets */,
+				28F1B8FC29B3331A001FC6A5 /* LocationHandler.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				28F1B8EE29B332CD001FC6A5 /* MucisByLocationAppUITestsLaunchTests.swift */,
 			);
 			path = MucisByLocationAppUITests;
+			sourceTree = "<group>";
+		};
+		28F1B8FB29B332EF001FC6A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				28F1B8FE29B3333F001FC6A5 /* CLPlacemarks.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F1B8FD29B3331A001FC6A5 /* LocationHandler.swift in Sources */,
 				28F1B8D429B332C9001FC6A5 /* ContentView.swift in Sources */,
 				28F1B8D229B332C9001FC6A5 /* MucisByLocationAppApp.swift in Sources */,
+				28F1B8FF29B3333F001FC6A5 /* CLPlacemarks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +437,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MucisByLocationApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is used to get the best music around";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +466,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MucisByLocationApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is used to get the best music around";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
