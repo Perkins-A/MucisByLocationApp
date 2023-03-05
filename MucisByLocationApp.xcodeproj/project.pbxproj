@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2838905529B487F400E3E463 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838905429B487F400E3E463 /* StateController.swift */; };
 		28F1B8D229B332C9001FC6A5 /* MucisByLocationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B8D129B332C9001FC6A5 /* MucisByLocationAppApp.swift */; };
 		28F1B8D429B332C9001FC6A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B8D329B332C9001FC6A5 /* ContentView.swift */; };
 		28F1B8D629B332CD001FC6A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F1B8D529B332CD001FC6A5 /* Assets.xcassets */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2838905429B487F400E3E463 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		2838905629B48BB300E3E463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		28F1B8CE29B332C9001FC6A5 /* MucisByLocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MucisByLocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F1B8D129B332C9001FC6A5 /* MucisByLocationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MucisByLocationAppApp.swift; sourceTree = "<group>"; };
 		28F1B8D329B332C9001FC6A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,11 +101,14 @@
 		28F1B8D029B332C9001FC6A5 /* MucisByLocationApp */ = {
 			isa = PBXGroup;
 			children = (
+				2838905629B48BB300E3E463 /* Info.plist */,
 				28F1B8FB29B332EF001FC6A5 /* Extensions */,
 				28F1B8D129B332C9001FC6A5 /* MucisByLocationAppApp.swift */,
 				28F1B8D329B332C9001FC6A5 /* ContentView.swift */,
 				28F1B8D529B332CD001FC6A5 /* Assets.xcassets */,
 				28F1B8D729B332CD001FC6A5 /* Preview Content */,
+				28F1B8FC29B3331A001FC6A5 /* LocationHandler.swift */,
+				2838905429B487F400E3E463 /* StateController.swift */,
 			);
 			path = MucisByLocationApp;
 			sourceTree = "<group>";
@@ -111,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				28F1B8D829B332CD001FC6A5 /* Preview Assets.xcassets */,
-				28F1B8FC29B3331A001FC6A5 /* LocationHandler.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 				28F1B8D429B332C9001FC6A5 /* ContentView.swift in Sources */,
 				28F1B8D229B332C9001FC6A5 /* MucisByLocationAppApp.swift in Sources */,
 				28F1B8FF29B3333F001FC6A5 /* CLPlacemarks.swift in Sources */,
+				2838905529B487F400E3E463 /* StateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +443,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MucisByLocationApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is used to get the best music around";
+				INFOPLIST_FILE = MucisByLocationApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is used to find the best music around";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -466,7 +473,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MucisByLocationApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is used to get the best music around";
+				INFOPLIST_FILE = MucisByLocationApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is used to find the best music around";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
