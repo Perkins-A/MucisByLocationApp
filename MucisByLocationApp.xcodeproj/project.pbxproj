@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2838905529B487F400E3E463 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838905429B487F400E3E463 /* StateController.swift */; };
+		2898EFEB29B5171A00E90CFC /* ArtistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898EFEA29B5171A00E90CFC /* ArtistResponse.swift */; };
+		2898EFED29B5176E00E90CFC /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898EFEC29B5176E00E90CFC /* Artist.swift */; };
 		28F1B8D229B332C9001FC6A5 /* MucisByLocationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B8D129B332C9001FC6A5 /* MucisByLocationAppApp.swift */; };
 		28F1B8D429B332C9001FC6A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B8D329B332C9001FC6A5 /* ContentView.swift */; };
 		28F1B8D629B332CD001FC6A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F1B8D529B332CD001FC6A5 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		2838905429B487F400E3E463 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 		2838905629B48BB300E3E463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2898EFEA29B5171A00E90CFC /* ArtistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistResponse.swift; sourceTree = "<group>"; };
+		2898EFEC29B5176E00E90CFC /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		28F1B8CE29B332C9001FC6A5 /* MucisByLocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MucisByLocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F1B8D129B332C9001FC6A5 /* MucisByLocationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MucisByLocationAppApp.swift; sourceTree = "<group>"; };
 		28F1B8D329B332C9001FC6A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2898EFE929B516FB00E90CFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2898EFEA29B5171A00E90CFC /* ArtistResponse.swift */,
+				2898EFEC29B5176E00E90CFC /* Artist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		28F1B8C529B332C9001FC6A5 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		28F1B8D029B332C9001FC6A5 /* MucisByLocationApp */ = {
 			isa = PBXGroup;
 			children = (
+				2898EFE929B516FB00E90CFC /* Model */,
 				2838905629B48BB300E3E463 /* Info.plist */,
 				28F1B8FB29B332EF001FC6A5 /* Extensions */,
 				28F1B8D129B332C9001FC6A5 /* MucisByLocationAppApp.swift */,
@@ -281,6 +295,8 @@
 				28F1B8D229B332C9001FC6A5 /* MucisByLocationAppApp.swift in Sources */,
 				28F1B8FF29B3333F001FC6A5 /* CLPlacemarks.swift in Sources */,
 				2838905529B487F400E3E463 /* StateController.swift in Sources */,
+				2898EFEB29B5171A00E90CFC /* ArtistResponse.swift in Sources */,
+				2898EFED29B5176E00E90CFC /* Artist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

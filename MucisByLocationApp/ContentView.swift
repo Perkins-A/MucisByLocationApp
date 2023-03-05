@@ -16,6 +16,7 @@ struct ContentView: View {
                 Image(systemName: "location.north")
                 Text(state.lastKnownLocation)
                     .padding()
+                Text(state.artistNames)
             }
             Button("Find Music ", action: {
                 state.findMusic()
